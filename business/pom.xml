@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>muti-module</artifactId>
+        <groupId>com.ttn</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>business</artifactId>
+   <dependencies>
+       <dependency>
+           <groupId>org.springframework</groupId>
+           <artifactId>spring-contexr</artifactId>
+       </dependency>
+       <!--dependency of data module in business-->
+       <dependency>
+           <groupId>com.ttn</groupId>
+           <artifactId>data</artifactId>
+           <!--build in varaible-->
+           <version>1.0-SNAPSHOT</version>
+       </dependency>
+   </dependencies>
+
+</project>
